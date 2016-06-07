@@ -1,9 +1,5 @@
 package com.unlucky.grapplehook;
 
-//import com.unlucky.grapplehook.block.ModBlocks;
-//import com.unlucky.grapplehook.crafting.ModCrafting;
-//import com.unlucky.grapplehook.item.ModItems;
-
 import net.minecraftforge.common.MinecraftForge;
 
 import com.unlucky.grapplehook.event.EventHandlerCommon;
@@ -17,8 +13,6 @@ public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent e) {
     	ModItems.init();
-    	//ModBlocks.init();
-    	//ModCrafting.init();
     	MinecraftForge.EVENT_BUS.register(new EventHandlerCommon());
     }
 
